@@ -14,6 +14,10 @@ flowchart LR
   L -.-> S
 ```
 
+## Underneath it all: a workspace that remembers
+
+[**Coppice**](https://github.com/greencat667/coppice) is the working environment these tools were built in: plain files that give an assistant persistent context about you and your work. It has a profile, a session protocol, lean task and memory files, and numbered projects with logs. A weekly trim and a health check keep it small enough to stay fast. None of the tools below need it, but they work best inside it, and several of them (the scheduled signal scan, the grant scanner, the wiki tasks, the skill-gap detector) write their output into the folders it sets up.
+
 ## The tools
 
 ### Sense: what's changing?
@@ -83,6 +87,7 @@ flowchart LR
 | "Is this idea worth building?" | experiment-card |
 | "Can people actually use it?" | rapid-prototype |
 | "We've decided. How do we plan it?" | project-brief |
+| "I want my assistant to remember me and my work between sessions" | coppice |
 
 ## One topic, all the way through
 
@@ -102,6 +107,8 @@ The organisation and people are invented. The research behind them is real and c
 Each repo's README has its own instructions, but the easiest way is to **ask Claude to do it**. In Claude Code or Claude Cowork, say something like:
 
 > "Install the scenario-builder, experiment-card and rapid-prototype skills from github.com/greencat667."
+
+To set up the workspace itself, say *"Set up a Coppice workspace in this folder. Follow `skills/coppice-setup/SKILL.md` from github.com/greencat667/coppice."*
 
 Claude will clone each repo and put the skill in the right place. Scheduled-task templates (trend-signal-monitor, grant-scanner, skill-gap-detector, llm-wiki) need a few details filled in; Claude can interview you for them and set up the schedule.
 

@@ -29,6 +29,7 @@ flowchart LR
 | Tool | What it does |
 |---|---|
 | [trend-report](https://github.com/greencat667/trend-report-skill-claude) | A deep, cited 14-section report on one trend: signals, systems, SWOT, three horizons, scenarios, second-order effects, learning priorities |
+| [signal-clustering](https://github.com/greencat667/signal-clustering-skill-claude) | Turns a signals log into named emerging patterns, scored and checked against counter-signals and your assumptions, and tracked over time |
 | [futures-wheel](https://github.com/greencat667/futures-wheel-skill-claude) | Maps the first-, second- and third-order consequences of a single change, with diverse simulated perspectives |
 
 ### Imagine: what could happen?
@@ -71,6 +72,7 @@ flowchart LR
 | If your question is… | Start with |
 |---|---|
 | "What's new in the areas we care about?" | trend-signal-monitor |
+| "We've collected lots of signals. What do they add up to?" | signal-clustering |
 | "What's really going on with this trend?" | trend-report |
 | "If this happens, what happens next?" | futures-wheel |
 | "What futures should we prepare for?" | scenario-builder |
@@ -90,6 +92,8 @@ The worked examples in four of these repos follow a single fictional case: a reg
 2. **[Scenarios](https://github.com/greencat667/scenario-builder-skill-claude/blob/main/scenario-builder/examples/community-tool-libraries-scenarios.md)**: four futures to 2036 built from the report's drivers, plus indicators and no-regret moves ([interactive matrix](https://github.com/greencat667/scenario-builder-skill-claude/blob/main/scenario-builder/examples/community-tool-libraries-scenarios.html): download it and open it in a browser)
 3. **[Experiment cards](https://github.com/greencat667/experiment-card-skill-claude/blob/main/experiment-card/examples/tool-delivery-experiment-cards.md)**: one no-regret idea, doorstep tool delivery for renters, broken into assumptions, with the riskiest ones turned into tests
 4. **[Prototype](https://github.com/greencat667/rapid-prototype-skill-claude/blob/main/rapid-prototype/examples/tool-delivery-prototype.html)**: a clickable booking journey (download it and open it in a browser) that tests the fee assumption, with its [test script](https://github.com/greencat667/rapid-prototype-skill-claude/blob/main/rapid-prototype/examples/tool-delivery-test-script.md)
+
+The [signal-clustering example](https://github.com/greencat667/signal-clustering-skill-claude/tree/main/signal-clustering/examples) uses the same fictional charity: a real 54-entry signals log on repair, reuse and sharing, clustered into nine patterns.
 
 The organisation and people are invented. The research behind them is real and cited.
 
